@@ -1,0 +1,44 @@
+<!doctype html><html lang="kk"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>ЖИ Ер Төстік</title>
+<style>
+:root{--n:#172d49;--g:#e6bd70;--c:#fbf7ee;--t:#397d7a}*{box-sizing:border-box}body{margin:0;background:var(--c);color:#203047;font-family:Arial,sans-serif}header{background:var(--n);color:white;padding:18px max(18px,calc((100% - 1080px)/2));display:flex;justify-content:space-between;gap:12px}.brand{font-weight:bold;letter-spacing:2px}.brand small{display:block;color:var(--g);letter-spacing:0;margin-top:5px}.pill{border:1px solid #ffffff55;border-radius:30px;padding:8px 12px;font-size:12px}main{max-width:1080px;margin:25px auto;padding:0 16px}.hero{background:linear-gradient(120deg,#172d49,#315f70);color:white;border-radius:22px;padding:28px;display:grid;grid-template-columns:1.2fr .8fr;gap:20px;align-items:center}.eyebrow{color:var(--g);font-size:12px;letter-spacing:2px;font-weight:bold}h1{font-size:clamp(30px,5vw,50px);line-height:1.05;margin:12px 0}.hero p{line-height:1.6;color:#e4ebf0}.art{min-height:190px;border-radius:18px;background:radial-gradient(circle,#bd9659,#47717b 45%,#1b3551 80%);display:grid;place-items:center;text-align:center;font-size:72px}.art small{display:block;font-size:12px;color:#ffedc6}.grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:18px;margin-top:18px}.panel{background:white;border:1px solid #e7e0d3;border-radius:18px;padding:20px}.panel h2{margin:0 0 8px;font-size:20px}.muted{color:#6b7887;font-size:14px;line-height:1.5}.profile{display:flex;align-items:center;gap:14px;margin:18px 0}.avatar{width:65px;height:65px;border-radius:16px;background:linear-gradient(145deg,#edcc83,#477a7a);display:grid;place-items:center;font-size:34px}.profile small{display:block;color:var(--t);margin-top:5px}.tags{display:flex;flex-wrap:wrap;gap:7px}.tag{background:#f1eee7;border-radius:20px;padding:7px 10px;font-size:12px}.chat{height:300px;overflow:auto;background:#f8f6f0;border:1px solid #e7e0d3;border-radius:12px;padding:12px;display:flex;flex-direction:column;gap:9px;margin:12px 0}.msg{max-width:88%;padding:10px 12px;border-radius:13px;font-size:14px;line-height:1.5}.bot{background:#e7f0ed;align-self:flex-start}.user{background:#e9eef7;align-self:flex-end}.sendrow{display:flex;gap:8px}.sendrow input{flex:1;min-width:0;border:1px solid #ddd;border-radius:10px;padding:12px;font-size:14px}button{cursor:pointer;border:0;border-radius:10px;padding:11px 14px;background:var(--n);color:white;font-weight:bold}.quick{display:flex;flex-wrap:wrap;gap:7px;margin-top:10px}.quick button,.answers button{background:#edf1f5;color:#203047;border:1px solid #dce3eb;font-size:12px}.note{margin-top:14px;background:#fbf3df;border:1px solid #f0dfb6;border-radius:10px;padding:10px;font-size:12px;line-height:1.5;color:#716346}.quiz{margin-top:18px}.answers{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin:12px 0}.answers button{text-align:left}.answers .correct{background:#e0f1e6;border-color:#75b48d}.answers .wrong{background:#fae7e4;border-color:#d99a90}footer{text-align:center;padding:24px;color:#87909a;font-size:12px}@media(max-width:720px){header{padding:14px 16px}.hero,.grid{grid-template-columns:1fr}.hero{padding:22px}.art{min-height:130px}.answers{grid-template-columns:1fr}}
+</style></head><body>
+<header><div class="brand">ЕРТЕГІЛЕР ӘЛЕМІ<small>2.0 • ЖИ білім беру платформасы</small></div><div class="pill">6-сыныпқа арналған демо</div></header>
+<main><section class="hero"><div><div class="eyebrow">ИНТЕРАКТИВТІ ӘДЕБИ САЯХАТ</div><h1>ЖИ Ер Төстікпен<br>бірге саяхат!</h1><p>Сұрақ қой, ертегі әлемін зертте, тапсырмаларды орында. Батырдың жолында білім мен батылдық серік болсын!</p></div><div class="art">⚔️<small>ЕР ТӨСТІК • ВИРТУАЛДЫ КЕЙІПКЕР</small></div></section>
+<section class="grid"><div class="panel"><h2>Кейіпкермен таныс</h2><p class="muted">Сенің виртуалды жолсерігің</p><div class="profile"><div class="avatar">🛡️</div><div><b>Ер Төстік</b><small>Батыл • Ақылды • Мейірімді</small></div></div><p class="muted">Мен саған ертегіні түсінуге, кейіпкерлерді тануға және білім сынақтарынан өтуге көмектесемін.</p><div class="tags"><span class="tag">Қазақ тілі</span><span class="tag">Әдебиет</span><span class="tag">Квест</span><span class="tag">Кері байланыс</span></div><div class="note"><b>Демо-нұсқа:</b> жауаптар әзірге алдын ала жазылған сценариймен беріледі. Нақты ЖИ API әлі қосылған жоқ.</div></div>
+<div class="panel"><h2>Ер Төстікпен сөйлесу</h2><p class="muted">Сұрағыңды қазақша жазып көр.</p><div class="chat" id="chat"><div class="msg bot">Сәлем, жас досым! Мен Ер Төстікпін. Ертегілер әлеміне саяхат жасауға дайынсың ба?</div></div><div class="sendrow"><input id="q" placeholder="Мысалы: Сен кімсің?"><button id="send">Жіберу</button></div><div class="quick"><button data-q="Сен кімсің?">Сен кімсің?</button><button data-q="Ертегі не туралы?">Ертегі не туралы?</button><button data-q="Маған сұрақ қойшы">Маған сұрақ қой</button></div></div></section>
+<section class="panel" style="margin-top:18px;background:linear-gradient(120deg,#fff,#f4f0e6);display:flex;align-items:center;justify-content:space-between;gap:18px;flex-wrap:wrap"><div><div class="eyebrow" style="color:#397d7a">ЖАҢА БӨЛІМ</div><h2 style="margin:8px 0">Ер Төстікпен үлкен саяхат</h2><p class="muted" style="margin:0">8 кезең, 16 сынақ, ұпай және ашылатын квест картасы.</p></div><a href="quest.html" style="display:inline-block;background:#172d49;color:white;text-decoration:none;border-radius:10px;padding:12px 17px;font-weight:bold">Квестті бастау →</a></section>
+<section class="panel quiz"><h2>Алғашқы сынақ</h2><p class="muted">Ер Төстік туралы біліміңді тексер.</p><b>1. Ер Төстік қандай қасиетімен ерекшеленеді?</b><div class="answers"><button data-a="wrong">Қорқақтығымен</button><button data-a="correct">Батылдығымен</button><button data-a="wrong">Жалқаулығымен</button><button data-a="wrong">Мақтаншақтығымен</button></div><p id="feedback" class="muted"></p></section></main><footer>«Ертегілер әлемі 2.0» • Алғашқы интерфейс прототипі • 2026</footer>
+<script>
+const chat=document.getElementById('chat'),q=document.getElementById('q');
+const history=[];
+function add(t,c){const d=document.createElement('div');d.className='msg '+c;d.textContent=t;chat.appendChild(d);chat.scrollTop=chat.scrollHeight}
+async function send(t){
+  t=(t||q.value).trim(); if(!t) return;
+  add(t,'user'); q.value='';
+  history.push({role:'user',content:t});
+  const sendButton=document.getElementById('send'); sendButton.disabled=true; sendButton.textContent='Жауап күтіңіз…';
+  try{
+    const res=await fetch('/.netlify/functions/chat',{
+      method:'POST',headers:{'Content-Type':'application/json'},
+      body:JSON.stringify({messages:history.slice(-10)})
+    });
+    const data=await res.json();
+    if(!res.ok) throw new Error(data.error||'Серверден жауап алу мүмкін болмады.');
+    const reply=data.reply||'Кешір, қазір жауап бере алмадым. Қайта сұрап көрші.';
+    add(reply,'bot'); history.push({role:'assistant',content:reply});
+  }catch(err){
+    add('Қазір ЖИ байланысы қолжетімсіз. '+(err.message||'Кейінірек қайталап көр.'),'bot');
+    history.pop();
+  }finally{sendButton.disabled=false;sendButton.textContent='Жіберу'}
+}
+document.getElementById('send').onclick=()=>send();
+q.addEventListener('keydown',e=>{if(e.key==='Enter')send()});
+document.querySelectorAll('[data-q]').forEach(b=>b.onclick=()=>send(b.dataset.q));
+document.querySelectorAll('[data-a]').forEach(b=>b.onclick=()=>{
+  document.querySelectorAll('[data-a]').forEach(x=>x.classList.remove('correct','wrong'));
+  b.classList.add(b.dataset.a);
+  document.getElementById('feedback').textContent=b.dataset.a==='correct'
+    ?'Дұрыс! Жарайсың! +1 ұпай'
+    :'Әлі де ойланып көр. Қайта таңдауға болады.';
+});
+</script></body></html>
